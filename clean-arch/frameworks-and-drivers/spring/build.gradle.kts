@@ -9,6 +9,9 @@ repositories {
 }
 
 dependencies {
+	implementation(project(":enterprise-business-rules"))
+	implementation(project(":application-business-rules"))
+
 	compileOnly("org.projectlombok:lombok:1.18.22")
 	annotationProcessor("org.projectlombok:lombok:1.18.22")
 	testCompileOnly("org.projectlombok:lombok:1.18.22")

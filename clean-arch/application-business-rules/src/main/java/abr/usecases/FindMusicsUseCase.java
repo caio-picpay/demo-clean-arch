@@ -11,7 +11,7 @@ public class FindMusicsUseCase {
 
     private final MusicRepositoryPort musicRepository;
 
-    List<Music> execute(){
+    public List<Music> execute(){
         return musicRepository.findAll();
     }
 }

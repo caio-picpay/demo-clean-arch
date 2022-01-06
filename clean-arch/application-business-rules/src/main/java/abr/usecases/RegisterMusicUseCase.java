@@ -11,7 +11,7 @@ public class RegisterMusicUseCase {
 
     private final MusicRepositoryPort musicCreator;
 
-    Music execute(Music music){
+    public Music execute(Music music){
         String musicId = UUID.randomUUID().toString();
         music.setId(musicId);
         musicCreator.create(music);
