@@ -1,7 +1,7 @@
 package abr.usecases;
 
 import abr.entities.Music;
-import abr.ports.MusicCreatorPort;
+import abr.ports.MusicRepositoryPort;
 import lombok.AllArgsConstructor;
 
 import java.util.UUID;
@@ -9,7 +9,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class RegisterMusicUseCase {
 
-    private final MusicCreatorPort musicCreator;
+    private final MusicRepositoryPort musicCreator;
 
     Music execute(Music music){
         String musicId = UUID.randomUUID().toString();
