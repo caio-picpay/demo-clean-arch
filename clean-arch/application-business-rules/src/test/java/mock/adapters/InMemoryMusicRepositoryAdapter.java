@@ -19,4 +19,9 @@ public class InMemoryMusicRepositoryAdapter implements MusicRepositoryPort {
     public int count() {
         return musics.size();
     }
+
+    @Override
+    public List<Music> findAll() {
+        return musics;
+    }
 }
