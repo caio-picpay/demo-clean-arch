@@ -11,6 +11,8 @@ rootProject.name = "demo-clean-arch"
 
 include(":enterprise-business-rules")
 include(":application-business-rules")
+include(":spring")
 
 project(":enterprise-business-rules").projectDir = File("$rootDir/clean-arch/enterprise-business-rules")
 project(":application-business-rules").projectDir = File("$rootDir/clean-arch/application-business-rules")
+project(":spring").projectDir = File("$rootDir/clean-arch/frameworks-and-drivers/spring")
