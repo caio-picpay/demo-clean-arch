@@ -8,4 +8,9 @@
  */
 
 rootProject.name = "demo-clean-arch"
-include("app")
+
+include(":enterprise-business-rules")
+include(":application-business-rules")
+
+project(":enterprise-business-rules").projectDir = File("$rootDir/clean-arch/enterprise-business-rules")
+project(":application-business-rules").projectDir = File("$rootDir/clean-arch/application-business-rules")
